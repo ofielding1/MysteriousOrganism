@@ -74,9 +74,6 @@ const pAequorFactory = (specimenNum, dna) => {
       
       return returnArr;
     }
-
-
-
   }
 };
 
