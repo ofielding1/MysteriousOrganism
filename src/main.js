@@ -35,6 +35,8 @@ const pAequorFactory = (specimenNum, dna) => {
       //compare current dna with input dna. Return percentage in common
     compareDNA(secondDNA){
       let count = 0;
+      
+
       for(let i = 0;i<this.dna.length;i++){
         if(this.dna[i] == secondDNA.dna[i]){
           count++;
@@ -54,6 +56,7 @@ const pAequorFactory = (specimenNum, dna) => {
       let percentage = Math.floor((count / this.dna.length) * 100);
       return percentage >= 60;
     },
+    //TODO Try this with object literals
     complementStrand(){
       let returnArr = [];
       for(let i = 0; i<this.dna.length;i++){
